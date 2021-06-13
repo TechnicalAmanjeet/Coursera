@@ -7,3 +7,4 @@
 ![7](https://github.com/TechnicalAmanjeet/Coursera/blob/master/Web%20Design%20for%20Everybody%EF%80%BA%20Basics%20of%20Web%20Development%20%26%20Coding%20Specialization/1.Introduction%20to%20HTML5/Weak%201/7.png)
 ![8](https://github.com/TechnicalAmanjeet/Coursera/blob/master/Web%20Design%20for%20Everybody%EF%80%BA%20Basics%20of%20Web%20Development%20%26%20Coding%20Specialization/1.Introduction%20to%20HTML5/Weak%201/8.png)
 ![9](https://github.com/TechnicalAmanjeet/Coursera/blob/master/Web%20Design%20for%20Everybody%EF%80%BA%20Basics%20of%20Web%20Development%20%26%20Coding%20Specialization/1.Introduction%20to%20HTML5/Weak%201/9.png)
+![10](https://github.com/TechnicalAmanjeet/Coursera/blob/master/Web%20Design%20for%20Everybody%EF%80%BA%20Basics%20of%20Web%20Development%20%26%20Coding%20Specialization/1.Introduction%20to%20HTML5/Weak%201/10.png)
