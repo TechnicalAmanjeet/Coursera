@@ -1,0 +1,137 @@
+
+	body {
+		padding: 1%; 
+		margin: 1%;
+	}
+
+	header {
+		background: #C0C0C0; 
+		background-image: url("../images/flywheel.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%; 
+		padding: 1%;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+	nav a {
+		background-color: rgba(218,234,213,0.60);
+		color: #000000;
+		display: inline-block;
+		font-family: "Trebuchet MS", Helvetica, sans-serif; 
+		font-size: 15px; 
+		padding: 15px;
+		margin: 5%; 
+		text-decoration: none; 
+		border-radius: 5px; 
+		height: 20px; 
+		width: 120px;
+
+	}
+
+	.active {
+		background: #FFFFFF;
+		color: blue;
+	}
+
+	h1 {
+		color: #FFFFFF; 
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Trebuchet MS", Helvetica, sans-serif; 
+		font-size: 40px;
+		position: relative;
+		top: -20px;
+
+	}
+
+	h2 {
+		color: #000000;
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+
+	.left {
+		background: #808000;
+		width: 20%;
+		float: left;
+		padding: 1% 0; 
+		
+	}
+
+	.left img {
+		border: solid 2px #000000;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 3%;
+		margin-bottom: 1%; 
+
+	    
+	}
+
+	.right {
+		width: 75%;
+		display: inline-block;
+		padding-left: 2%;
+	}
+
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+
+	p {
+		font-size: 16px;
+	}
+
+	th {
+	    text-align: left;
+	}
+
+    /* ---Styling table with at least four properties --- */
+    table {
+	    border-collapse: collapse;
+   		width: 800px;
+   		font-weight: bold;
+   		font-size: 80%;
+	}
+
+	
+	th {
+		background: #808000;
+		color: #FFFFFF;
+	    border: 2px solid #FFFFFF;
+   		background-repeat: no-repeat;
+	}
+
+
+	td {
+		background: #E0FFFF; 
+		color: #575555;
+		border: 2px solid #FFFFFF;
+		text-align: center;
+	}
+
+	table, td, th {
+	    margin-left: 3%;
+	    padding: 1%;
+	}
+
+	tr th:first-child, tr td:first-child {
+		text-align: left;
+	}
+    tr th{
+        text-align: center;
+    }
+    tr td {
+		opacity: 0.8;
+	}
+	tr td:hover, tr th:hover {
+		opacity: 1.5;
+	}
+   

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<!--This is a form for a pizza store selling different kinds of pizzas.
+    The form takes serveral inputs such as customer details as well as the pizza selection
+    so that the order can be placed.
+    This form also contains validations for the user details to ensure smooth order placement.
+    THANK YOU :)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Form</title>
+    <style> <!--css portion starts-->
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header{
+            width: 1000px;
+            background:url("https://images.theconversation.com/files/298628/original/file-20191024-170462-1hyjuz0.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header>h1{
+            font-size: 45px;
+            text-transform: uppercase;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
+        }
+        header>p{
+            font-size:xx-large;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #indiv1{
+            width: 1000px;
+            background-color: rgb(255, 223, 80);
+        }
+        .userdiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .userdiv>p{
+            font-size: x-large;
+            margin-right: 3%
+        }
+        .userdiv>input{
+            height: 30px;
+            width: 300px;
+            font-size: large;
+
+        }
+        #udiv2{
+            margin-right: 2%;
+        }
+        #udiv3{
+            margin-right: 5%;
+        }
+        #sdiv{
+            font-size: larger;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4%;
+        }
+        
+        #sdiv>*{
+            margin-bottom: 2%;
+        }
+        select{
+            height: 30px;
+            width: 80px;
+        }
+        #hdiv{
+            font-size: larger;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4%;
+        }
+        #hdiv>label{
+            font-size: larger;
+        }
+        #dv1{
+            margin-right: 5%;
+        }
+        #tdiv{
+            font-size: larger;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4%;
+        }
+        #submit{
+            margin-left: 45%;
+            margin-bottom: 5%;
+            font-size: large;
+            height: 40px;
+            width: 90px;
+            background-color: rgb(50, 50, 255);
+            color: white;
+            border-radius: 10% 10% 10% 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PIZZA HUB</h1>
+        <p>The best Pizzas in town</p>
+    </header>
+    <div id = "indiv1">
+        <form>
+            <!--here user details are taken-->
+            <div class = "userdiv" id = "udiv1">
+                <p>Name: </p>
+                <input id = "name" type="text" placeholder="enter name" />
+            </div>
+            <div class = "userdiv" id = "udiv2">
+                <p>Address: </p>
+                <input id = "address" type="text" placeholder="enter address" />
+            </div>
+            <div  class = "userdiv" id = "udiv3">
+                <p>Contact no: </p>
+                <input id = cont type="text" placeholder="enter phone_no" />
+            </div>
+            <hr/>
+            <!--here we see different selections for order placement-->
+            <div id = "sdiv">
+                <div>
+                    <label for="pizza_Sel">SELECT PIZZA: </label>
+                    <select id = "sel1" name="Pizza_sel">
+                        <option style = "height: 40px; width: 100px;" value="cb">Cheese Burst</option>
+                        <option value="cs1">Classic Sausage</option>
+                        <option value="cs2">Chicken Supreme</option>
+                        <option value="m">Margherita</option>
+                        <option value="vl">Veg Lovers</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pizza_q">SELECT QUANTITY: </label>
+                    <select id = "sel2" name="Pizza_q">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pizza_size">SELECT PIZZA: </label>
+                    <select id = "sel3" name="Pizza_size">
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">Extra Large</option>
+                    </select>
+                </div>
+            </div>
+            <div id = "hdiv">
+                <label for="dv1">Home Delivery</label>
+                <input id = "dv1" type = "radio" value="hd" name = "dv"/>
+                <label for = "dv2">Hand Pickup</label>
+                <input id = "dv2" type = "radio" value = "hp" name = "dv"/>
+            </div>
+            <div id = "tdiv">
+                <label for="tip">You can always leave a tip($0-5)</label>
+                <input type ="range" id = "tip" min="0" max = "5"/>
+            </div>
+            <button id = "submit" onclick="order()">SUBMIT</button>
+        </form>
+    </div>
+
+    <script>
+        //this function checks all the inputs are proper and filled or not and shows error accordingly
+        var validation = ()=>{
+            if(isNaN(document.getElementById("cont").value)){
+                alert("enter a proper phone number")
+                return 0;
+            }
+            else if(!document.querySelector('input[name="dv"]:checked')){
+                alert("please select the pickup type")
+                return 0;
+            }
+            else if(document.getElementById("name").value && document.getElementById("address").value && document.getElementById("cont").value){
+                return 1;
+            }
+            else{
+                alert("please provide all user details")
+                return 0;
+            }
+        }
+
+        //this function activates the validation and places the order(though no actual order here XD)
+        var order = ()=>{
+            var status = validation();
+
+            if(status == 1){
+                alert("THANK YOU FOR PLACING ORDER!! \nYOUR PIZZA WILL BE READY SOON :)s")
+            }
+
+        }
+    </script>
+</body>
+
+</html>

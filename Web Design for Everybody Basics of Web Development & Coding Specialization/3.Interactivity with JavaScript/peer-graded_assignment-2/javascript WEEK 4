@@ -1,0 +1,18 @@
+function billingFunction(){
+  
+  if(document.getElementById('same').checked==true){
+    document.getElementById("billingName").value = document.getElementById("shippingName").value;
+    document.getElementById("billingZip").value = document.getElementById("shippingZip").value;
+  }
+  else{
+    document.getElementById("billingZip").value = '';
+    document.getElementById("billingName").value = '';
+  }
+}    
+shippingName: <input type='text' id='shippingName' /><br />
+shippingZip: <input type='text' id='shippingZip' /><br />
+<br />
+Copy Same? <input type="checkbox" id='same' onclick='billingFunction()'/>I have a car 
+<br /><br />
+billingName: <input type='text' id='billingName' /><br />
+billingZip: <input type='text' id='billingZip' /><br />
