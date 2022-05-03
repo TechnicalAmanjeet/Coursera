@@ -1,0 +1,5 @@
+course 1 : https://www.coursera.org/learn/duke-programming-web?specialization=java-programming
+course 2 : https://www.coursera.org/learn/java-programming?specialization=java-programming
+course 3 : https://www.coursera.org/learn/java-programming-arrays-lists-data?specialization=java-programming
+course 4 : https://www.coursera.org/learn/java-programming-design-principles?specialization=java-programming
+course 5 : https://www.coursera.org/learn/java-programming-recommender?specialization=java-programming
