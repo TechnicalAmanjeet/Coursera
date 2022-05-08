@@ -1,0 +1,3 @@
+1. Developed and designed an interactive graphical method that displayed geospatial data using unfolding maps library and essentials of data cleaning and data visulisation.
+2. Also implemented event driven programming efficient searching and sorting techniques for the displayed data.
+3. Learned and implemented core object oriented programming principle like polymorphism, inheritance, encaptulation and abstraction.
